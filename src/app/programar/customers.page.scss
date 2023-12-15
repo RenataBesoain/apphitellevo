@@ -1,0 +1,18 @@
+#mapa-mapbox {
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+  }
+  
+  ion-slides {
+    height: auto !important; /* Asegura que los slides se ajusten al contenido */
+  }
+  
+  ion-footer {
+    position: relative; /* Asegura que el pie de página esté en su posición original */
+  }
+  
+  .my-custom-class {
+    background-color: red; /* Cambia el color de fondo según tus preferencias */
+    color: white; /* Cambia el color del texto según tus preferencias */
+  }
+  

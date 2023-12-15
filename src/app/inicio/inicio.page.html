@@ -1,0 +1,29 @@
+<ion-content class="ion-padding ion-text-center">
+  <div class="logo">
+    <img src="../assets/app.png">
+  </div>
+  
+  <!-- Muestra el mensaje de error si showError es true -->
+  <div *ngIf="showError" class="error-message" color="danger">
+    {{ errorMessage }}
+  </div>
+
+  <form (ngSubmit)="login()" [formGroup]="loginUsuario">
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input formControlName="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="password" type="password" required></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color='dark' expand='block'>
+      Iniciar sesión
+    </ion-button>
+  </form>
+  
+  <p color="primary" class="mt-3">¿No tienes cuenta? <a [routerLink]="['/registro']" href="">Registrarse</a></p>
+  <a [routerLink]="['/recuperar']" class="mt-3" href="">Recuperar Contraseña</a>
+</ion-content>

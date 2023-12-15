@@ -1,0 +1,35 @@
+<ion-content class="ion-padding">
+  <div class="card-container">
+    <ion-card class="driver-card">
+      <img alt="Imagen del conductor" src="https://blog.uber-cdn.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-06-at-14.53.39.png" />
+      <ion-card-header>
+        <ion-card-title>Soy un Conductor</ion-card-title>
+        <ion-card-subtitle>¿Listo para conducir?</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+       Lleva a tus compañeros a sus destinos de manera rápida y segura.
+      </ion-card-content>
+    </ion-card>
+    <ion-button [routerLink]="['/viaje']" type="submit" color='dark' expand='block'>
+      ¡Soy Conductor!
+    </ion-button>
+  </div>
+
+  <div class="card-container">
+    <ion-card class="passenger-card">
+      <img alt="Imagen del pasajero" src="https://blogapi.uber.com/wp-content/uploads/2019/03/Aprende-c%C3%B3mo-pedir-un-viaje-a-trav%C3%A9s-de-Uber-para-otra-persona-1024x512.png" />
+      <ion-card-header>
+        <ion-card-title>Soy un Pasajero</ion-card-title>
+        <ion-card-subtitle>¿Necesitas un viaje?</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Solicita un viaje y disfruta de un viaje cómodo y seguro.
+      </ion-card-content>
+    </ion-card>
+    <ion-button [routerLink]="['/programar']" type="submit" color='dark' expand='block'>
+      ¡Solicitar Viaje!
+    </ion-button>
+  </div>
+</ion-content>

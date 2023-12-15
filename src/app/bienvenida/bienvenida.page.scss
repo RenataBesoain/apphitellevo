@@ -1,0 +1,45 @@
+// app.component.scss
+
+ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .driver-card,
+  .passenger-card {
+    width: 80%; // Ajusta el ancho deseado para las tarjetas
+    margin: 0 8px; // Agrega márgenes horizontal para separar las tarjetas
+  }
+  
+  .driver-card img,
+  .passenger-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .driver-card ion-card-title,
+  .passenger-card ion-card-title {
+    color: #3880ff;
+  }
+  
+  .driver-card ion-card-subtitle,
+  .passenger-card ion-card-subtitle {
+    color: #32db64;
+  }
+  
+  ion-button {
+    margin-top: 8px; // Ajusta el margen superior del botón
+    width: 80%; // Ajusta el ancho deseado para los botones
+  }
+  
